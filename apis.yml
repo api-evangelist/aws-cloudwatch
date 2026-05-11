@@ -1,0 +1,61 @@
+aid: aws-cloudwatch
+name: Amazon CloudWatch
+description: >-
+  Amazon CloudWatch is a monitoring and observability service from AWS that
+  collects metrics, logs, and events from AWS resources, applications, and
+  on-premises services. It enables operators to set alarms, visualize
+  dashboards, automate responses, and troubleshoot performance across cloud
+  workloads. The CloudWatch Query API and AWS SDKs expose programmatic access
+  to metrics, alarms, dashboards, and Logs via AWS Signature Version 4
+  authenticated HTTPS requests.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Monitoring
+  - Observability
+  - Metrics
+  - Logs
+  - Alarms
+  - Cloud
+  - AWS
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/aws-cloudwatch/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: aws-cloudwatch:monitoring-api
+    name: Amazon CloudWatch API
+    description: >-
+      Query API for publishing and retrieving metrics, managing alarms, and
+      configuring dashboards in Amazon CloudWatch. Requests are authenticated
+      with AWS Signature Version 4 (SigV4) using AWS access keys or temporary
+      IAM credentials.
+    humanURL: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html
+    baseURL: https://monitoring.us-east-1.amazonaws.com
+    tags:
+      - Monitoring
+      - Metrics
+      - Alarms
+      - Dashboards
+      - AWS
+    properties:
+      - type: Documentation
+        url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html
+      - type: User Guide
+        url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/
+      - type: Endpoints
+        url: https://docs.aws.amazon.com/general/latest/gr/cw_region.html
+
+common:
+  - type: Website
+    url: https://aws.amazon.com/cloudwatch/
+  - type: Documentation
+    url: https://docs.aws.amazon.com/cloudwatch/
+  - type: Pricing
+    url: https://aws.amazon.com/cloudwatch/pricing/
+  - type: Sign Up
+    url: https://portal.aws.amazon.com/billing/signup
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
