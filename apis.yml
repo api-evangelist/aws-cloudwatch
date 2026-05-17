@@ -54,7 +54,7 @@ common:
     url: https://docs.aws.amazon.com/cloudwatch/
   - type: Pricing
     url: https://aws.amazon.com/cloudwatch/pricing/
-  - type: Sign Up
+  - type: SignUp
     url: https://portal.aws.amazon.com/billing/signup
 maintainers:
   - FN: Kin Lane
