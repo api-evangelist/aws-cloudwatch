@@ -1,0 +1,45 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Amazon CloudWatch API",
+    "version": "2010-08-01"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "CloudWatch Query API entry point",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://monitoring.{region}.amazonaws.com/",
+        "params": [
+          {
+            "name": "Action",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "Version",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "form-urlencoded",
+          "data": []
+        }
+      },
+      "docs": "All CloudWatch API actions are invoked as POST requests to the root\npath with the Action and Version specified in the\napplication/x-www-form-urlencoded request body.\n"
+    }
+  ],
+  "bundled": true
+}
