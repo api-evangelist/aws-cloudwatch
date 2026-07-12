@@ -48,6 +48,14 @@ apis:
         url: https://docs.aws.amazon.com/general/latest/gr/cw_region.html
 
 common:
+  - type: TrustCenter
+    url: security/aws-cloudwatch-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/aws-cloudwatch-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/aws-cloudwatch-domain-security.yml
+  - type: Authentication
+    url: authentication/aws-cloudwatch-authentication.yml
   - type: Website
     url: https://aws.amazon.com/cloudwatch/
   - type: Documentation
