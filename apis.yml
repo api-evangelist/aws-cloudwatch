@@ -48,6 +48,8 @@ apis:
         url: https://docs.aws.amazon.com/general/latest/gr/cw_region.html
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/aws-cloudwatch-agentic-access.yml
   - type: TrustCenter
     url: security/aws-cloudwatch-trust-center.yml
   - type: VulnerabilityDisclosure
