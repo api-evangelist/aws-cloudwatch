@@ -9,7 +9,19 @@ description: >-
   to metrics, alarms, dashboards, and Logs via AWS Signature Version 4
   authenticated HTTPS requests.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aws-cloudwatch.png
 tags:
   - Monitoring
   - Observability
@@ -24,29 +36,38 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: aws-cloudwatch:monitoring-api
-    name: Amazon CloudWatch API
-    description: >-
-      Query API for publishing and retrieving metrics, managing alarms, and
-      configuring dashboards in Amazon CloudWatch. Requests are authenticated
-      with AWS Signature Version 4 (SigV4) using AWS access keys or temporary
-      IAM credentials.
-    humanURL: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html
-    baseURL: https://monitoring.us-east-1.amazonaws.com
-    tags:
-      - Monitoring
-      - Metrics
-      - Alarms
-      - Dashboards
-      - AWS
-    properties:
-      - type: Documentation
-        url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html
-      - type: User Guide
-        url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/
-      - type: Endpoints
-        url: https://docs.aws.amazon.com/general/latest/gr/cw_region.html
-
+- aid: aws-cloudwatch:monitoring-api
+  name: Amazon CloudWatch API
+  description: >-
+    Query API for publishing and retrieving metrics, managing alarms, and configuring dashboards in Amazon
+    CloudWatch. Requests are authenticated with AWS Signature Version 4 (SigV4) using AWS access keys
+    or temporary IAM credentials.
+  humanURL: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html
+  baseURL: https://monitoring.us-east-1.amazonaws.com
+  tags:
+  - Monitoring
+  - Metrics
+  - Alarms
+  - Dashboards
+  - AWS
+  properties:
+  - type: Documentation
+    url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html
+  - type: User Guide
+    url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/
+  - type: Endpoints
+    url: https://docs.aws.amazon.com/general/latest/gr/cw_region.html
+- aid: aws-cloudwatch:aws-cloudwatch-amazon-cloudwatch-api-api
+  name: Amazon CloudWatch Amazon CloudWatch API API
+  description: >-
+    The Amazon CloudWatch API API from Amazon CloudWatch — 1 operation(s) for amazon cloudwatch api.
+  humanURL: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Welcome.html
+  baseURL: https://monitoring.us-east-1.amazonaws.com
+  tags:
+  - Amazon CloudWatch API
+  properties:
+  - type: OpenAPI
+    url: openapi/aws-cloudwatch-amazon-cloudwatch-api-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/aws-cloudwatch-agentic-access.yml
