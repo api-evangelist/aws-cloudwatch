@@ -1,0 +1,14 @@
+{
+  "provider": "aws-cloudwatch",
+  "sources": [
+    "aws-cloudwatch-amazon-cloudwatch-api-api-openapi.yml"
+  ],
+  "outputs": [
+    "aws-cloudwatch-amazon-cloudwatch-api-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
